@@ -1,0 +1,26 @@
+
+
+*{
+    margin: 2px;
+}
+.ee{
+    width: 250px;
+    height: 250px;
+    background-color: skyblue;
+}
+.ff{
+    width: 250px;
+    height:250px;
+    background-color: skyblue;
+}
+.gg{
+    width: 250px;
+    height: 250px;
+    background-color: skyblue;
+}
+.xo{
+    display: flex;
+}
+.centre{
+    padding: 30px;
+}
