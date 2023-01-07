@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="/file6.js"></script>
+    </head>
+    <body>
+        <body  class="">
+            <div class="container p-8 mt-0 h-screen justify-center mt-8 bg-blue-100 ml-40">
+              <div class="w-full overflow-x-auto">
+                <div class="my-2">
+                  <h3 class="text-xl font-bold">Shopping Cart 2 item</h3>
+                </div>
+                <table class="w-full shadow-xl justify-center ml-50">
+                  <thead>
+                    <tr class="bg-gray-400 ">
+                      <th class="px-6 py-3 ml-8 font-xl whitespace-nowrap">Image</th>
+                      <th class="px-6 py-3 font-xl whitespace-nowrap">Product</th>
+                      <th class="px-6 py-3 font-xl whitespace-nowrap">Qty</th>
+                      <th class="px-6 py-3 font-xl whitespace-nowrap">Price</th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="flex justify-center">
+                          <img
+                            src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28186.webp"
+                            class="h-60 w-60 mt-8" 
+                            alt="image"
+                          />
+                        </div>
+                      </td>
+                      <td class="p-4 px-6 text-center whitespace-nowrap">
+                        <div class="flex flex-col items-center justify-center">
+                          <h3 class="text-2xl text-black text-bold ">Baby Cloths</h3>
+                        </div>
+                      </td>
+                      <td class="p-4 px-20 text-center whitespace-nowrap">
+                        <div>
+                          <button  onclick="decreaseNumber('textbox','itemval')">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="inline-flex w-6 h-6 text-red-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                          </button>
+                          <input type="text"name="qty" value="0" id="textbox" class="w-12 text-center bg-gray-100 "
+                          />
+    
+    
+                      <button onclick="increaseNumber('textbox','itemval')">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="inline-flex w-6 h-6 text-green-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                          </button>
+                          
+                        </div>
+                      </td>
+                      <td class="p-4 px-6 text-center whitespace-nowrap" id="itemval">$0</td>
+                      
+                    </tr>
+                    <br>
+                    <br>
+
+                    <tr>
+                      <td>
+                        <div class="flex justify-center">
+                          <img
+                            src="https://cdn.fcglcdn.com/brainbees/images/premium/275x210/1006277.jpg"
+                            class=" h-60 w-60 "
+                            alt="image"
+                          />
+                        </div>
+                      </td>
+                      <td class="p-4 px-6 text-center whitespace-nowrap text-2xl text-black text-bold ">Baby Cloths</td>
+                      <td class="p-4 px-6 text-center whitespace-nowrap">
+                        <div>
+                          <button onclick="decreaseNumber('textbox1','itemval1')">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="inline-flex w-6 h-6 text-red-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                          </button>
+                          <input
+                          id="textbox1"
+                            type="text"
+                            name="qty"
+                            value="1"
+                            class="w-12 text-center bg-gray-100 outline-none"
+                          />
+                          <button onclick="increaseNumber('textbox1','itemval1')">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="inline-flex w-6 h-6 text-green-600"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="p-4 px-6 text-center whitespace-nowrap" id="itemval1">$0</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>
+                        
+                  </tbody>
+                </table>
+                
+                <div class="mt-4 shadow-lg bg-gray-500">
+                  <div class="py-4 rounded-md shadow">
+                    <h3 class="text-xl font-bold text-black"> Summary of the Order</h3>
+                    <div class="flex justify-between px-4">
+                      <span class="font-bold">Product Amount</span>
+                      <span class="font-bold" id="product_total_amt">$0</span>
+                    </div>
+                    <div class="flex justify-between px-4">
+                      <span class="font-bold">Shipping charge</span>
+                      <span class="font-bold text-red-600" id="shipping_charge">$0</span>
+                    </div>
+                    
+                    <div
+                      class="flex items-center justify-between px-4 py-2 mt-3 border-t-2"
+                    >
+                      <span class="text-xl font-bold">Total Amount</span>
+                      <span class="text-2xl font-bold" id="total_cart_amt">$0</span>
+                    </div>
+                    <div>
+                        <button
+                        class="px-6 py-2 mt-2 text-lg text-indigo-100 bg-indigo-600 rounded-md hover:bg-indigo-700">CHECKOUT</button> 
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-2/4">
+                    <div class="mt-4">
+                      <div class="px-4 py-4 rounded-md" id="collapseExample">
+                        <label for="coupon code" class="font-semibold text-gray-500"
+                          >Coupon Code</label
+                        >
+                        <input
+                        id="discount_code1"
+                          type="text"
+                          placeholder="coupon code"
+                          value="enetr code"
+                          class="w-full px-2 py-2 border border-blue-600 rounded-md outline-none"
+                        />
+                        <span class="block text-green-600" id="error_trw"
+                          ></span
+                        >
+                        <button onclick="discount_code()"
+                          class="px-6 py-2 mt-2 text-sm text-indigo-100 bg-indigo-600 rounded-md hover:bg-indigo-700">
+                          Apply
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+               
+              </div>
+            </div>
+          </body>
+        
+    </body>
+    </html>

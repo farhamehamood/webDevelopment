@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/jspract3.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+    <nav class="flex flex-row justify-center">
+        <div class="flex justify-center items-center mt-5">
+           
+                  <div class="btn-group mt-20">
+                    <button type="button" class="btn-primary  bg-purple-700 hover:bg-purple-900 text-white text-xl font-italic py-5 px-4 mr-1 rounded">Cart(<span class= "ml-4" id="counter_div"> </span>)</button>
+                    
+              </div>
+            
+    </nav>
+    <div class="w-screen h-screen flex justify-center items-center">
+        <div class="container mx-auto max-w-sm w-full p-4 sm:w-1/2">
+          <div class="card flex flex-col justify-center p-10 bg-white rounded-lg shadow-4xl mb-60 hover:bg-gray-400 bg-gray-400">
+            <div class="prod-title">
+              
+              <p class="uppercase text-bold text-black">
+                FIRST CRY.COM...INDIA'S FIRST BABY ONLINE SHOPPING APP
+              </p>
+            </div>
+            <div class="prod-img">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28182.webp"
+                   class="w-full object-cover object-center" />
+            </div>
+            <div class="prod-info grid gap-10">
+              <div>
+                <ul class="flex flex-row justify-center items-center">
+                  <li class="mr-4 last:mr-0">
+                    <span
+                          class="block p-1 border-2 border-gray-500 rounded-full transition ease-in duration-300">
+                      <a href="#blue" class="block w-6 h-6 bg-blue-900 rounded-full"></a>
+                    </span>
+                  </li>
+                  <li class="mr-4 last:mr-0">
+                    <span
+                          class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                      <a href="#yellow" class="block w-6 h-6 bg-yellow-500 rounded-full"></a>
+                    </span>
+                  </li>
+                  <li class="mr-4 last:mr-0">
+                    <span
+                          class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                      <a href="#red" class="block w-6 h-6 bg-red-500 rounded-full"></a>
+                    </span>
+                  </li>
+                  <li class="mr-4 last:mr-0">
+                    <span
+                          class="block p-1 border-2 border-white hover:border-gray-500 rounded-full transition ease-in duration-300">
+                      <a href="#green" class="block w-6 h-6 bg-green-500 rounded-full"></a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col md:flex-row justify-between items-center text-gray-900">
+                <p class="font-bold text-xl">65 $</p>
+                <button 
+                        class="px-6 py-2 bg-blue-800  rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none"onclick="counterHandler(this)" 
+                        value="1">Add</button>
+                        
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+    
+    <!-- Main 
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="http://www.azspagirls.com/files/2010/09/orange.jpg" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">Orange</h4>
+        <p class="card-text">Price: $0.5</p>
+        <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="http://images.all-free-download.com/images/graphicthumb/vector_illustration_of_ripe_bananas_567893.jpg" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">Banana</h4>
+        <p class="card-text">Price: $1.22</p>
+        <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">Lemon</h4>
+        <p class="card-text">Price: $5</p>
+        <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+          </div>
+        </div>
+    </div>
+    
+      
+    
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+              
+            </table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
